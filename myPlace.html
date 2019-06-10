@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+#map {
+height: 400px;
+width: 100%;
+}
+</style>
+</head>
+<body>
+<p>임실군,063-000-0000,전라북도 임실군 임실읍 수정로 30,35.617787,127.289104</p>
+<h3>My Google Maps Demo</h3>
+<div id="map"></div>
+<script>
+function initMap() {
+var uluru = {lat: 35.617787, lng: 127.289104};
+var map = new google.maps.Map(
+document.getElementById('map'), {zoom: 16, center: uluru});
+var marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_CQXqs5MVuSmlO2l7hfg5hXh7ZibC5jE&callback=initMap">
+</script>
+</body>
+</html>
